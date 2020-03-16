@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900|Karla:400,700&display=swap');
+</style>
+
+
+body {
+    height: 100%;
+    width:100%;  
+}
+
+html {
+    font-size: 10px;
+}
+
+.copertina{
+    height: 100vh;
+}
+
+h1{
+    font-size: 10.6rem;
+    font-family: 'Darker Grotesque', sans-serif;
+	font-weight: 600;
+	line-height: 12.6rem;
+	letter-spacing: 1.3rem;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #1e08aa;    
+}
+
+h2{
+    font-size: 10rem;
+    font-family: 'Karla', sans-serif;
+    line-height: 10.5rem;
+    letter-spacing: -1.9rem;
+    color: #1e08aa;
+}
+
+
+.centered{
+	position: fixed;
+    top: 47%;
+    left: 55%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.out-screen{
+    position: relative;
+}
+
+.kit-button{
+    /*font properties*/
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e08aa;
+    letter-spacing: 0.2rem;
+    padding: 5 30 7 30;
+    /*button properties*/
+    background-color: transparent;
+    border: 3px solid #1e08aa;
+    border-radius: 0;    
+}
+
+/*.bottom-right{
+    position: -webkit-sticky;  Safari 
+    position: sticky;
+    top: 0;
+}
+
+.top-right{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+}*/
+
+.kit-button:hover{
+    background-color: #1e08aa;
+    color: white;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
+    padding: 5px;
+    left: 85%;  
+}
