@@ -298,18 +298,15 @@ p{
     padding: 0px;
     font-size: 1.7rem;
     text-align: center;
-    margin: 0 2 0 2;
-    
+    margin: 0 2 0 2;    
     border-radius: 20px;
     -webkit-text-stroke-width: 1.3px;
     -webkit-text-stroke-color: #ff5958;
+    transition: all .2s ease-in-out;
 }
 
 .arrow-slider-1:hover{
-    border: 1px solid #100f86;
-    background-color: #100f86;
-    color: #ffffff;
-    -webkit-text-stroke-color: #100f86;
+    transform: scale(1.14);
 }
 
 /*      VIDEO       */
@@ -318,29 +315,26 @@ p{
     background-image: url("../asset/img/11A_01473.jpg");
 }
 
+.video-btn{
+    height: 96px;
+    width: 96px;
+    border-radius: 60px;
+    color: #ffffff;
+    background: #ff5958;
+    font-size: 5.0rem;
+    transition: all .2s ease-in-out;
+}
+
+.play-video{    
+   margin-left: 5px;
+}
+
+.video-btn:hover{    
+    transform: scale(1.14);
+    color: #ffffff;
+}
+
 /* MODALE - pop-up - 
-
-.modal-dialog {
-      max-width: 800px;
-      margin: 30px auto;
-  }
-
-.modal-body {
-  position:relative;
-  padding:0px;
-}
-.close {
-  position:absolute;
-  right:-30px;
-  top:0;
-  z-index:999;
-  font-size:2rem;
-  font-weight: normal;
-  color:#fff;
-  opacity:1;
-}
-
-*/
 
 
 .modal-dialog {
