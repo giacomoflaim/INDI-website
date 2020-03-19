@@ -29,6 +29,7 @@ html {
     margin: 24 0 24 0;
 }
 
+/*  TOP */
 .top-80{
     margin-top: 80px;
 }
@@ -41,6 +42,18 @@ html {
     margin-top: 32px;
 }
 
+/* BOTTOM */
+.bottom-120{
+    margin-bottom: 80px;
+}
+
+.bottom-80{
+    margin-bottom: 80px;
+}
+
+.bottom-40{
+    margin-bottom: 40px;
+}
 
 /*font*/
 
@@ -154,12 +167,15 @@ p{
     padding: 0 20 0 20;
     border-radius: 20px;
     width: 220px;
+    transition: all .5s ease-in-out;
 }
 
 
 .my-btn-menu:before {
-   content: url(../asset/svg/arrow-button-close.svg);
-   margin-right: 8px;
+    content: url(../asset/svg/arrow-button-close.svg);
+    margin-right: 8px;
+    
+    
  }
 
 .my-btn-menu:hover{
@@ -197,25 +213,26 @@ p{
     width: 96px;
     height: 96px;
     margin: 80 0 80 0;
+    transition: all .6s ease-in-out;
    
 }
 
 #wolf:hover{
     content: url(../asset/svg/wolf.svg);
     transform: scale(1.5);
-    transition:all 1s;   
+    
 }
 
 #fish:hover{
     content: url(../asset/svg/fish.svg);
     transform: scale(1.5);
-    transition:all 1s;   
+      
 }
 
 #gorilla:hover{
     content: url(../asset/svg/gorilla.svg);
     transform: scale(1.5);
-    transition:all 1s;  
+    
 }
 
 #arrow-copertina:hover{
@@ -346,6 +363,12 @@ p{
     padding:0px;
 }
 
+.modal-backdrop {
+    background-color: #6F6FB6;
+    opacity:0.75 !important;
+    
+}
+
 .close {
     position: absolute;
     right:-56px;
@@ -353,7 +376,7 @@ p{
     font-size: 2.5rem;
     color:#ffffff;    
     z-index: 100;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .close-icon{
@@ -372,5 +395,6 @@ p{
 .close-icon:hover, .close:hover{
     transform: scale(1.14);
     color: white;
+    opacity:1.0 !important;
 }
 

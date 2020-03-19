@@ -28,6 +28,14 @@ $('a[href*=\\#]').on('click', function(event){
     });
 
 
+
+/* slider 2 */
+
+
+
+
+/* video-modale */
+
 var $videoSrc;  
 $('.video-btn').click(function() {
     $videoSrc = $(this).data( "src" );
