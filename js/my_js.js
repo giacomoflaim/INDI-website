@@ -14,11 +14,24 @@ $('a[href*=\\#]').on('click', function(event){
 
 /* slider */
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-1', {
       slidesPerView: 'auto',
       spaceBetween: 30,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.pagination-1',
+        clickable: true,
+      },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var swiper = new Swiper('.swiper-container-esercizi', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      pagination: {
+        el: '.pagination-2',
         clickable: true,
       },
         navigation: {
