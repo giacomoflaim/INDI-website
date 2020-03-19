@@ -289,7 +289,7 @@ p{
 }
 
 .arrow-slider-1{
-    border: 1px solid #ff5958;
+    
     background-color: #ff5958;
     color: #ffffff;
     font-weight: 100;
@@ -300,6 +300,7 @@ p{
     text-align: center;
     margin: 0 2 0 2;    
     border-radius: 20px;
+    border: 1px solid #ff5958;
     -webkit-text-stroke-width: 1.3px;
     -webkit-text-stroke-color: #ff5958;
     transition: all .2s ease-in-out;
@@ -334,27 +335,42 @@ p{
     color: #ffffff;
 }
 
-/* MODALE - pop-up - 
-
+/* MODALE - pop-up - */
 
 .modal-dialog {
-      max-width: 800px;
-      margin: 30px auto;
+    max-width: 800px;
   }
 
-
-
 .modal-body {
-  position:relative;
-  padding:0px;
+    position:relative;
+    padding:0px;
 }
+
 .close {
-  position:absolute;
-  right:-30px;
-  top:0;
-  z-index:999;
-  font-size:2rem;
-  font-weight: normal;
-  color:#fff;
-  opacity:1;
+    position: absolute;
+    right:-56px;
+    top:-2;
+    font-size: 2.5rem;
+    color:#ffffff;    
+    z-index: 100;
+    opacity: 0.8;
 }
+
+.close-icon{
+    height: 32px;
+    width: 32px;
+    font-size: 2.5rem;
+    border-radius: 20px;
+    background: #ff5958;
+    padding-top: 4px;    
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ff5958;
+    transition: all .2s ease-in-out;
+    z-index: 100;
+}
+
+.close-icon:hover, .close:hover{
+    transform: scale(1.14);
+    color: white;
+}
+
