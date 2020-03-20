@@ -5,10 +5,13 @@
 </style>
 
 
+
 body {
     height: 100%;
     width:100%;
 }
+
+
 
 html {
     font-size: 10px;
@@ -262,6 +265,10 @@ p{
     -webkit-text-stroke-color: #ffffff;
 }
 
+.arrow-copertina:focus{
+    outline: 0;
+}
+
 
 /*      SLIDER      */
 .swiper-container {
@@ -325,6 +332,10 @@ p{
 
 .arrow-slider-1:hover{
     transform: scale(1.14);
+}
+
+.arrow-slider-1:focus{
+    outline: 0;
 }
 
 /*      VIDEO       */
@@ -444,6 +455,10 @@ p{
 
 /* bottoni */
 
+.btn{
+    box-shadow: none !important;
+}
+
 .btn-esercizi{
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 14px;
@@ -454,29 +469,35 @@ p{
     margin-right: 20px;
     color: #100f86;
     background: transparent;
-    border: transparent;    
+    border: transparent;
+    outline:0 !important;
+    box-shadow: none;
 }
 
 .btn-esercizi:hover{
     color: #ff5958;
     background: transparent !important;
     border: transparent !important;
+    outline:0 !important;
 }
 
 .btn-esercizi:focus{
     color: #ff5958;
     background: transparent !important;
-    border: none !important;    
+    outline:0;   
 }
 
 .active{
     color: #ff5958 !important;
     background: transparent !important;
-    border: none !important;    
+    outline:0;
 }
 
-.btn-secondary:focus{
-    border:none;
-}
+
+
+
+
+
+
     
 
