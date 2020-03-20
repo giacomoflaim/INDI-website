@@ -1,10 +1,4 @@
-/*$(window).scroll(function() {
-  if ($(this).scrollTop() > 740) {
-    $(".kit-button").removeClass("bottom-right").addClass("top-right");
-  } else {
-    $(".kit-button").removeClass("top-right").addClass("bottom-right");
-  }
-});*/
+
 
 $('a[href*=\\#]').on('click', function(event){     
     event.preventDefault();
@@ -27,6 +21,10 @@ $('a[href*=\\#]').on('click', function(event){
       },
     });
 
+/* carousel esercizi */
+
+/*
+
     var swiper = new Swiper('.swiper-container-esercizi', {
       slidesPerView: 'auto',
       spaceBetween: 30,
@@ -40,9 +38,32 @@ $('a[href*=\\#]').on('click', function(event){
       },
     });
 
-
+*/
 
 /* slider 2 */
+    $('#myCarousel').carousel({
+		interval:   500000
+	});
+
+	
+	var clickEvent = false;
+	$('#myCarousel').on('click', '.nav a', function() {
+			clickEvent = true;
+			$('.nav li').removeClass('active');
+			$(this).parent().addClass('active');		
+	}).on('slid.bs.carousel', function(e) {
+		if(!clickEvent) {
+			var count = $('.nav').children().length -1;
+			var current = $('.nav li.active');
+			current.removeClass('active').next().addClass('active');
+			var id = parseInt(current.data('slide-to'));
+			if(count == id) {
+				$('.nav li').first().addClass('active');	
+			}
+		}
+		clickEvent = false;
+	});
+    
 
 
 

@@ -197,23 +197,29 @@
 </div>
 
 <hr>
-    
+
+<!--
 <div class="container-fluid bottom-120" style="padding: 0;">
     
+
     <div class="row margin-standard">
         <div class="col-md-12">
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn active btn-esercizi">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> mappa dei valori
+                <a  href="#es-1">
+                    <label class="btn active btn-esercizi">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked style="display: none;"> mappa dei valori
+                    </label>
+                </a>
+                <a href="#es-2">
+                    <label class="btn btn-esercizi" href="#es-2">
+                        <input type="radio" name="options" id="option2" autocomplete="off" style="display: none;"> diversi-tipi
+                    </label>
+                </a>
+                <label class="btn btn-esercizi">
+                    <input type="radio" name="options" id="option3" autocomplete="off" style="display: none;"> roleplaying
                 </label>
                 <label class="btn btn-esercizi">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> diversi-tipi
-                </label>
-                <label class="btn btn-esercizi">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> roleplaying
-                </label>
-                <label class="btn btn-esercizi">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> buoni diversi propositi
+                    <input type="radio" name="options" id="option4" autocomplete="off" style="display: none;"> buoni diversi propositi
                 </label>
             </div>            
         </div>
@@ -223,16 +229,174 @@
     
     <div class="swiper-container swiper-container-esercizi">
         <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide-esercizi">Slide 1</div>
-          <div class="swiper-slide swiper-slide-esercizi">Slide 2</div>
+          <div class="swiper-slide swiper-slide-esercizi" id="es-1">Slide 1</div>
+          <div class="swiper-slide swiper-slide-esercizi" id="es-2">Slide 2</div>
           <div class="swiper-slide swiper-slide-esercizi">Slide 3</div>
           <div class="swiper-slide swiper-slide-esercizi">Slide 4</div>
         </div>
     </div>
+    
+    <div class="swiper-pagination pagination-2" style="width: 100%; margin-top: 16px;"></div>
+
+    
+  
+    
+    
+    
+</div>
+
+-->
+    
+<div class="container-fluid">
+    
+    <ul class="nav nav-pills">
+        <li data-target="#myCarousel" data-slide-to="0" class="btn-esercizi active">
+            <a href="#">mappa dei valori</a>
+        </li>
+        <li data-target="#myCarousel" data-slide-to="1" class="btn-esercizi active">
+            <a href="#">diversi-tipi</a>
+        </li>
+        <li data-target="#myCarousel" data-slide-to="2" class="btn-esercizi">
+            <a href="#">roleplaying</a>
+        </li>
+        <li data-target="#myCarousel" data-slide-to="3" class="btn-esercizi">
+            <a href="#">buoni diversi propositi</a>
+        </li>
+    </ul>
 </div>
     
-<div class="swiper-pagination pagination-2" style="width: 100%; margin-top: 16px;"></div>
+    
+    
+        
+<div class="container-fluid" style="padding: 0">        
+        
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 20px;">   
+    <!-- Wrapper for slides -->
+        <div class="carousel-inner swiper-container-2">
+            <div class="carousel-item active">  
+                <div class="row h-100">
+                    <div class="container align-self-center">
+                        <div class="row">
+                            <div class="col-lg-6 top-80">
+                                <h3 class="h3-esercizio">1.</h3>
+                                <h1 class="h1-esercizio">Quali sono i principi promossi nel tuo ambiente di lavoro? </h1>
+                                <p class="p-esercizio">La nostra attività lavorativa di tutti i giorni è guidata da un insieme di valori che determinano non solo la nostra motivazione ma anche le nostre relazioni e dinamiche con gli altri. Questo esercizio di card sorting è pensato per aiutarvi a riflettere su quali sono i principi riconosciuti da tutti all'interno dell'ambiente di lavoro, e quelli invece importanti ma trascurati.</p>
+                            </div>
+                            <div class="col-lg-5 offset-1 top-80">
+                                <img  id="" src="./asset/svg/img-es-1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="align-self-center">
+                        <a data-target="#myCarousel" data-slide-to="1">
+                            <div id='container'>
+                                <h4 id='label'>DIVERsi-tipi</h4>
+                                <div id='labelbackground'></div>
+                            </div>
+                        </a>
+<!--                       <div class="label-prova">Center</div>-->
+                    </div>
+                </div>
+            </div>
+        <!-- End Item -->
+            
+        <!-- Item 2 -->
+            <div class="carousel-item">
+                <div class="row h-100">
+                    <div class="container align-self-center">
+                        <div class="row">
+                            <div class="col-lg-6 top-80">
+                                <h3 class="h3-esercizio">2.</h3>
+                                <h1 class="h1-esercizio"></h1>
+                                <p class="p-esercizio"></p>
+                            </div>
+                            <div class="col-lg-5 offset-1 top-80">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="align-self-center">
+                        <a data-target="#myCarousel" data-slide-to="1">
+                            <div id='container'>
+                                <h4 id='label'>DIVERsi-tipi</h4>
+                                <div id='labelbackground'></div>
+                            </div>
+                        </a>
+<!--                       <div class="label-prova">Center</div>-->
+                    </div>
+                </div>
 
+            </div>
+        <!-- End Item -->
+            
+        <!-- Item 3 -->
+            <div class="carousel-item">
+                <div class="row h-100">
+                    <div class="container align-self-center">
+                        <div class="row">
+                            <div class="col-lg-6 top-80">
+                                <h3 class="h3-esercizio">3.</h3>
+                                <h1 class="h1-esercizio"></h1>
+                                <p class="p-esercizio"></p>
+                            </div>
+                            <div class="col-lg-5 offset-1 top-80">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="align-self-center">
+                        <a data-target="#myCarousel" data-slide-to="1">
+                            <div id='container'>
+                                <h4 id='label'>--</h4>
+                                <div id='labelbackground'></div>
+                            </div>
+                        </a>
+<!--                       <div class="label-prova">Center</div>-->
+                    </div>
+                </div>
+
+            </div>
+        <!-- End Item -->
+            
+        <!-- Item 4 -->
+            <div class="carousel-item">
+                <div class="row h-100">
+                    <div class="container align-self-center">
+                        <div class="row">
+                            <div class="col-lg-6 top-80">
+                                <h3 class="h3-esercizio">4.</h3>
+                                <h1 class="h1-esercizio"></h1>
+                                <p class="p-esercizio"></p>
+                            </div>
+                            <div class="col-lg-5 offset-1 top-80">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="align-self-center">
+                        <a data-target="#myCarousel" data-slide-to="1">
+                            <div id='container'>
+                                <h4 id='label'>--</h4>
+                                <div id='labelbackground'></div>
+                            </div>
+                        </a>
+<!--                       <div class="label-prova">Center</div>-->
+                    </div>
+                </div>
+                
+            </div>
+        <!-- End Item -->
+        </div>
+    </div>
+</div>
+    
+
+
+    
     
     
     
