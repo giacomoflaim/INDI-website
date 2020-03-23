@@ -66,6 +66,12 @@ $('a[href*=\\#]').on('click', function(event){
 
 
 
+
+$(".hide-func").click(function() {
+ $(".container-slider").hide(1).delay(800).show(1);
+});
+
+
     
 
 
