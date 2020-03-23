@@ -63,6 +63,9 @@ $('a[href*=\\#]').on('click', function(event){
 		}
 		clickEvent = false;
 	});
+
+
+
     
 
 

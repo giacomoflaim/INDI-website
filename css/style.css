@@ -181,7 +181,7 @@ p{
     padding: 0 20 0 20;
     border-radius: 20px;
     width: 220px;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 
@@ -421,50 +421,6 @@ p{
 
 /*      SLIDER ESERCIZI     */
 
-/*
-.swiper-container-esercizi {
-    width: 100%;
-    height: 200px;
-    
-}
-.swiper-slide-esercizi {
-    text-align: left;
-    font-size: 18px;
-    background: #100f86!important;
-    color: white;
-    
-
-       Center slide text vertically 
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;    
-}
-
-    .swiper-slide-esercizi:nth-child(1) {
-        width: 100%;
-        }
-    .swiper-slide-esercizi:nth-child(2n) {
-    width: 100%;
-    }
-    .swiper-slide-esercizi:nth-child(3n) {
-    width: 100%;
-    }
-    .swiper-slide-esercizi:nth-child(4n) {
-    width: 100%;
-    }
-*/
-
-/*      carousel esercizi       */
-/* bottoni tab */
 
 .btn{
     box-shadow: none !important;
@@ -531,7 +487,7 @@ p{
 }
 
 .h1-esercizio{
-    margin-top: 56px;
+    margin-top: 40px;
     color: #ffffff;
 }
 
@@ -543,7 +499,7 @@ p{
 /* cerchio */
 
 
-#container {
+.container-slider {
     position: absolute;
     top: 50px;
     right: -500px;
@@ -557,19 +513,19 @@ p{
     transition: all .1s;
 }
 
-#label {
+.label {
     position: absolute;
     z-index: 1;
     text-align: center;
     width: 100%;
     height: 100%;
-    top: -6%;
+    top: -8%;
     transform: rotate(180deg);    
 }
 .ui-page-theme-a {
     text-shadow: none;
 }
-#labelbackground {
+.labelbackground {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -580,11 +536,11 @@ p{
     border-bottom-right-radius: 1000px;
 }
 
-#container:hover{
+.container-slider:hover{
     right: -400px;
 }
 
-#container:hover:after {
+.container-lupo:hover:after {
     position: absolute;
     z-index: 1;
     text-align: center;
@@ -593,13 +549,103 @@ p{
     top: 24%;
     left: 32%;
     transform: rotate(-90deg);       
-    content: url(../asset/svg/group-58.svg);  
+    content: url(../asset/svg/wolf-es.svg);  
+    z-index: 200;
+}
+
+.container-persona:hover:after {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 32%;
+    transform: rotate(-90deg);       
+    content: url(../asset/svg/person-es.svg);  
+    z-index: 200;
+}
+
+.container-binocolo:hover:after {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 22%;
+    left: 42%;
+    transform: rotate(-90deg);       
+    content: url(../asset/svg/binocolo-es.svg);  
     z-index: 200;
 }
 
 
 
+/* btn download esercizi */
 
+.my-download{
+    margin-top: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    height: 40px;
+    border-radius: 20px;
+    width: 170px;
+    padding: 0;
+    position:inherit;
+}
+
+.text-btn{
+    margin-left: 30px;
+}
+
+.my-download::before {   
+    position: absolute;
+    content: url(../asset/svg/arrow-button-close.svg);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 1px solid white; 
+    left: -1;
+    top: -1;    
+    display:flex;
+    align-items: center;
+    padding: 2 0 0 12;
+    transition: ease,width .5s cubic-bezier(.75,0,.175,1);
+ }
+
+.my-download:hover{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.my-download:hover:before {
+    content: url(../asset/svg/arrow-button-hover.svg);
+    border:none;
+    padding:0 0 0 13;
+}
+
+
+.my-prev-icon{    
+    position: absolute;
+    left: -50;
+    height: 100px;
+    width: 100px;
+    background-color: #ff5958;
+    border-radius: 200px;   
+}
+
+#prev-arrow-slider{
+    position: absolute;
+    height: 24px;
+    left: 10;
+    content: url(../asset/svg/arrow-button-hover.svg);
+    transform: rotate(90deg);
+}
 
 
 
