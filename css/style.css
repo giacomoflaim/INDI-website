@@ -470,23 +470,24 @@ p{
 }
 
 .btn-esercizi a:hover{
-   /* background: transparent !important;
-    border: transparent !important;
-    outline:0 !important;*/
+    color: #ff5958;
     text-decoration: none;
 }
-
-
 
 .swiper-container-2{
     background: #100f86;
     height: 700px;
 }
 
-.color-active .active a,
-.color-active .active a:hover {
+.active a,
+.active a:hover {
     color: #ff5958 !important;
 }
+
+ul {
+  list-style-type: none;
+}
+
 /* botton avanti custom */
 
 

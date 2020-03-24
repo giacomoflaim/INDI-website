@@ -23,24 +23,7 @@ $('a[href*=\\#]').on('click', function(event){
 
 /* carousel esercizi */
 
-/*
 
-    var swiper = new Swiper('.swiper-container-esercizi', {
-      slidesPerView: 'auto',
-      spaceBetween: 30,
-      pagination: {
-        el: '.pagination-2',
-        clickable: true,
-      },
-        navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-
-*/
-
-/* slider 2 */
     $('#myCarousel').carousel({
 		interval:   500000
 	});
@@ -64,12 +47,31 @@ $('a[href*=\\#]').on('click', function(event){
 		clickEvent = false;
 	});
 
+    $(".hide-func").click(function() {
+     $(".container-slider").hide(1).delay(600).show(1);
+    });
+
+/* active */
+
+
+$('#myCarousel').on('slide.bs.carousel', function(e) {
+        var from = $('.nav li.active').index();
+        var next = $(e.relatedTarget);
+        var to =  next.index();
+        
+
+        // This could interest you
+        $('.nav-pills li').removeClass('active').eq(to).addClass('active');
+
+    });
 
 
 
-$(".hide-func").click(function() {
- $(".container-slider").hide(1).delay(600).show(1);
+
+$(".carousel-control-prev").click(function(){
+  $("body").css("overflow","hidden");
 });
+
 
 
     
@@ -84,8 +86,6 @@ $('.video-btn').click(function() {
     $videoSrc = $(this).data( "src" );
 });
 console.log($videoSrc);
-
-  
   
 // when the modal is opened autoplay it  
 $('#myModal').on('shown.bs.modal', function (e) {
@@ -93,8 +93,6 @@ $('#myModal').on('shown.bs.modal', function (e) {
 // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
 $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
 })
-  
-
 
 // stop playing the youtube video when I close the modal
 $('#myModal').on('hide.bs.modal', function (e) {
