@@ -33,8 +33,17 @@ html {
 }
 
 /*  TOP */
+
+.top-160{
+    margin-top: 160px;
+}
+
 .top-80{
     margin-top: 80px;
+}
+
+.top-64{
+    margin-top: 64px;
 }
 
 .top-40{
@@ -45,9 +54,17 @@ html {
     margin-top: 32px;
 }
 
+.top-24{
+    margin-top: 24px;
+}
+
 /* BOTTOM */
+.bottom-160{
+    margin-bottom: 160px;
+}
+
 .bottom-120{
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 
 .bottom-80{
@@ -426,10 +443,10 @@ p{
     box-shadow: none !important;
 }
 
-.active a{
+/*.active a{
     color: #ff5958 !important;
     background: transparent !important;
-}
+}*/
 
 
 .btn-esercizi a{
@@ -448,25 +465,28 @@ p{
     margin-bottom: 40px;
 }
 
+.flex-fill{
+    text-align: center;
+}
+
 .btn-esercizi a:hover{
-    color: #ff5958 !important;
-    background: transparent !important;
+   /* background: transparent !important;
     border: transparent !important;
-    outline:0 !important;
+    outline:0 !important;*/
     text-decoration: none;
 }
 
-.btn-esercizi:focus{
-    color: #ff5958;
-    background: transparent !important;
-    outline:0;   
-}
+
 
 .swiper-container-2{
     background: #100f86;
     height: 700px;
 }
 
+.color-active .active a,
+.color-active .active a:hover {
+    color: #ff5958 !important;
+}
 /* botton avanti custom */
 
 
@@ -596,11 +616,11 @@ p{
     border-radius: 20px;
     width: 170px;
     padding: 0;
-    position:inherit;
+    position:relative;
 }
 
 .text-btn{
-    margin-left: 30px;
+    margin-left: 24px;
 }
 
 .my-download::before {   
@@ -647,7 +667,237 @@ p{
     transform: rotate(90deg);
 }
 
+/*      SCARICA IL KIT      */
+
+
+.darkblue-bg{
+    background-color: #0c0158;
+    padding: 40 0 40 0;
+}
+
+.bg-img{
+    background-image: url("../asset/svg/circle-background.svg");
+    background-size: contain;
+}
+
+.scarica-kit-title, .scarica-kit-text{
+    color:#ffffff;
+    text-align: center;
+}
+
+.btn-download-kit{
+    margin-top: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    height: 40px;
+    border-radius: 20px;
+    width: auto;
+    padding: 0;
+    position:relative;
+}
+
+.btn-download-kit-text{
+    margin: 0 24 0 48;
+}
+
+.btn-download-kit::before {   
+    position: absolute;
+    content: url(../asset/svg/arrow-button-close.svg);
+    height: 40px;
+    width: 40px;
+    background: #ff5958;
+    border-radius: 50px;
+    left: -1;
+    top: -1;    
+    display:flex;
+    align-items: center;
+    padding: 2 0 0 12;
+    transition: ease,width .5s cubic-bezier(.75,0,.175,1);
+ }
+
+.btn-download-kit:hover{
+    color: #ffffff;
+     background: #ff5958;
+}
+
+.btn-download-kit:hover:before {
+    content: url(../asset/svg/arrow-button-hover.svg);
+    border:none;
+    padding:0 0 0 12;
+}
+
+
+/*          WORKSHOP        */
+
+.bg-orange{
+    background-color: #ff5958;
+}
+
+
+.btn-partecipa{
+    margin-top: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    height: 40px;
+    border-radius: 20px;
+    width: 170px;
+    padding: 0;
+    position:relative;
+}
 
 
 
+.btn-partecipa::before {   
+    position: absolute;
+    content: url(../asset/svg/arrow-button-close.svg);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 1px solid white; 
+    left: -1;
+    top: -1;    
+    display:flex;
+    align-items: center;
+    transform: rotate(270deg);
+    padding: 2 0 0 12;
+    transition: ease,width .5s cubic-bezier(.75,0,.175,1);
+ }
+
+.btn-partecipa:hover{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-partecipa:hover:before {
+    content: url(../asset/svg/arrow-button-hover.svg);
+    border:none;
+    padding:2 0 0 12;
+}
+
+/*         kickstarter      */
+
+#img-bg{
+    background: url("../asset/img/mockup-img.png") no-repeat center;
+    background-size: cover;
+    margin-bottom: 0;
+    
+}
+
+#logo-dark{
+    max-width: 180px;
+}
+
+.btn-kickstarter{
+    margin-top: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    height: 40px;
+    border-radius: 20px;
+    width: auto;
+    padding: 0;
+    position:relative;
+}
+
+.btn-kickstarter-text{
+    margin: 0 24 0 48;
+    padding-bottom: 20px;
+}
+
+.btn-kickstarter::before {   
+    position: absolute;
+    content: url(../asset/svg/arrow-button-close.svg);
+    height: 40px;
+    width: 40px;
+    background: #ff5958;
+    border-radius: 50px;
+    left: -1;
+    top: -1;    
+    display:flex;
+    align-items: center;
+    transform: rotate(270deg);
+    padding: 2 0 0 12;
+    transition: ease,width .5s cubic-bezier(.75,0,.175,1);
+ }
+
+.btn-kickstarter:hover{
+    color: #ffffff;
+     background: #ff5958;
+}
+
+.btn-kickstarter:hover:before {
+    content: url(../asset/svg/arrow-button-hover.svg);
+    border:none;
+    padding:2 0 0 12;
+}
+
+/*      FOOTER      */
+
+.footer-bg{
+    background-color: #0c0158;
+    height: 290px
+}
+
+#logo-footer{
+    max-width: 90px;
+    margin-left: 50px;
+}
+
+.icon-social{
+    height: 32px;
+    margin: 28 16 0 0;
+    transition: .5s ease;
+}
+
+.icon-social:hover{
+    transform: scale(1.2);
+    
+    
+}
+
+.twitter{
+    content: url("../asset/svg/twitter.svg");
+    display: inline;
+    cursor: pointer;
+}
+
+.instagram{
+    content: url("../asset/svg/instagram.svg");
+    display: inline;
+    cursor: pointer;
+}
+
+.facebook{
+    content: url("../asset/svg/facebook.svg");
+    display: inline;
+    cursor: pointer;
+}
+
+hr.line-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 64 50 16 50;
+}
+
+.footer-h5{
+    text-transform: none;
+    font-weight: 500;
+    margin: 0 0 0 50;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
 
