@@ -263,11 +263,16 @@ p{
     width: 96px;
     height: 96px;
     margin: 80 0 80 0;
-    animation: vibrate-1 0.3s linear infinite both; 
+    animation: vibrate-1 1.4s linear infinite both; 
     
 }
 
-@keyframes vibrate-1{0%{transform:translate(0)}20%{transform:translate(-4px,4px)}40%{transform:translate(-4px,-4px)}60%{transform:translate(4px,4px)}80%{transform:translate(4px,-4px)}100%{transform:translate(0)}}
+@keyframes vibrate-1
+{
+    0%{transform:translate(0)}5%{transform:translate(-6px,6px)}10%{transform:translate(-6px,-6px)}15%{transform:translate(6px,6px)}20%{transform:translate(6px,-6px)}25%{transform:translate(0)}
+
+
+}
 
 #wolf:hover{
     content: url(../asset/svg/wolf.svg);
