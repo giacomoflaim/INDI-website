@@ -64,14 +64,7 @@ $('#myCarousel').on('slide.bs.carousel', function(e) {
         $('.nav-pills li').removeClass('active').eq(to).addClass('active');
 
     });
-
-
-
-
-$(".carousel-control-prev").click(function(){
-  $("body").css("overflow","hidden");
-});
-
+/*
 
 
     

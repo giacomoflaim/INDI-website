@@ -184,38 +184,59 @@ p{
     font-weight: 500;
 }
 
-.my-btn-menu{
+
+
+
+
+.my-btn-menu{  
+    margin-left: 60px;
     background-color: transparent;
-    color: #ffffff;
     border-color: white;
+    color: #ffffff;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
-    margin-left: 60px;
     letter-spacing: 1.75px;
     height: 40px;
-    padding: 0 20 0 20;
     border-radius: 20px;
-    width: 220px;
-    transition: all .2s ease-in-out;
+    width: auto;
+    padding: 0;
+    position:relative;
 }
 
+.my-btn-menu{
+    margin: 0 24 0 48;
+}
 
-.my-btn-menu:before {
+.my-btn-menu::before {   
+    position: absolute;
     content: url(../asset/svg/arrow-button-close.svg);
-    margin-right: 8px;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border-radius: 50px;
+    left: -1;
+    top: -1;    
+    display:flex;
+    align-items: center;
+    padding: 2 0 0 16 ;
+    transition: ease,width .5s cubic-bezier(.75,0,.175,1);
  }
 
 .my-btn-menu:hover{
-    background-color: #ff5958;
-    border-color: #ff5958;
     color: #ffffff;
+    border-color: #ff5958;
+    background: #ff5958;
 }
 
 .my-btn-menu:hover:before {
-    content: url(../asset/svg/arrow-button-hover.svg);    
+    content: url(../asset/svg/arrow-button-hover.svg);
+    border:none;
+    padding: 0 0 0 16;
 }
+
+
 
 /*      COPERTINA       */
 #logo-copertina{
@@ -382,6 +403,7 @@ p{
 
 .play-video{    
    margin-left: 5px;
+    font-size: 3.2rem;
 }
 
 .video-btn:hover{    
@@ -618,6 +640,7 @@ ul {
     width: 170px;
     padding: 0;
     position:relative;
+    
 }
 
 .text-btn{
@@ -636,6 +659,7 @@ ul {
     display:flex;
     align-items: center;
     padding: 2 0 0 12;
+    background: #100f86;
     transition: ease,width .5s cubic-bezier(.75,0,.175,1);
  }
 
@@ -649,6 +673,66 @@ ul {
     border:none;
     padding:0 0 0 13;
 }
+
+
+
+
+.btn-download-es{
+    margin-top: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    height: 40px;
+    border-radius: 20px;
+    width: auto;
+    padding: 0;
+    position:relative;
+}
+
+.btn-download-text-es{
+    margin: 0 24 0 48;
+}
+
+.btn-download-es::before {   
+    position: absolute;
+    content: url(../asset/svg/arrow-button-close.svg);
+    height: 40px;
+    width: 40px;
+    border: 1px solid white; 
+    background: transparent;
+    border-radius: 50px;
+    left: -1;
+    top: -1;    
+    display:flex;
+    align-items: center;
+    padding: 2 0 0 12;
+    transition: ease,width .5s cubic-bezier(.75,0,.175,1);
+ }
+
+.btn-download-es:hover{
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid white;
+    
+}
+
+.btn-download-es:hover:before {
+    content: url(../asset/svg/arrow-button-hover.svg);
+    border:none;
+    padding:0 0 0 13;
+}
+
+
+
+
+
+
+
+
 
 
 .my-prev-icon{    
@@ -801,7 +885,7 @@ ul {
 .btn-kickstarter{
     margin-top: 16px;
     background-color: transparent;
-    color: #ffffff;
+    color: #0c0158;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -837,7 +921,7 @@ ul {
 
 .btn-kickstarter:hover{
     color: #ffffff;
-     background: #ff5958;
+    background: #ff5958;
 }
 
 .btn-kickstarter:hover:before {
