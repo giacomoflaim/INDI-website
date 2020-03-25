@@ -88,7 +88,7 @@ h1{
 
 h2{
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 2.4rem;
+    font-size: 3.0rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -263,25 +263,30 @@ p{
     width: 96px;
     height: 96px;
     margin: 80 0 80 0;
-    transition: all .6s ease-in-out;
-   
+    animation: vibrate-1 0.3s linear infinite both;
+    transition: all .6s ease-in-out;   
 }
+
+@keyframes vibrate-1{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
 
 #wolf:hover{
     content: url(../asset/svg/wolf.svg);
-    transform: scale(1.5);
+    animation-play-state: paused;
+    
     
 }
 
 #fish:hover{
     content: url(../asset/svg/fish.svg);
     transform: scale(1.5);
+    animation-play-state: paused;
       
 }
 
 #gorilla:hover{
     content: url(../asset/svg/gorilla.svg);
     transform: scale(1.5);
+    animation-play-state: paused;
     
 }
 
