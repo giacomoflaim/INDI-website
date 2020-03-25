@@ -257,22 +257,38 @@ p{
     margin: 80 0 80 0
 }
 
-.circle-2{
-    background: #180060;
-    border-radius: 50%;
-    width: 96px;
-    height: 96px;
-    margin: 80 0 80 0;
-    animation: vibrate-1 1.4s linear infinite both; 
-    
+.vibrate{
+    animation: vibrate-1 1.4s linear infinite both;
 }
 
+.wobble{
+    -webkit-animation: wobble-hor-bottom 1.3s infinite both;
+	        animation: wobble-hor-bottom 1.3s infinite both;
+}
+
+/* vibrate circle-2 */
 @keyframes vibrate-1
 {
     0%{transform:translate(0)}5%{transform:translate(-6px,6px)}10%{transform:translate(-6px,-6px)}15%{transform:translate(6px,6px)}20%{transform:translate(6px,-6px)}25%{transform:translate(0)}
-
-
 }
+
+
+/* wobble circle-3 */
+@-webkit-keyframes wobble-hor-bottom{
+    0%,20%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}
+    3%{-webkit-transform:translateX(-30px) rotate(-6deg);transform:translateX(-30px) rotate(-6deg)}
+    6%{-webkit-transform:translateX(15px) rotate(6deg);transform:translateX(15px) rotate(6deg)}
+    9%{-webkit-transform:translateX(-15px) rotate(-3.6deg);transform:translateX(-15px) rotate(-3.6deg)}
+    12%{-webkit-transform:translateX(9px) rotate(2.4deg);transform:translateX(9px) rotate(2.4deg)}
+    15%{-webkit-transform:translateX(-6px) rotate(-1.2deg);transform:translateX(-6px) rotate(-1.2deg)}}
+
+@keyframes wobble-hor-bottom{
+    0%,20%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}
+    3%{-webkit-transform:translateX(-30px) rotate(-6deg);transform:translateX(-30px) rotate(-6deg)}
+    6%{-webkit-transform:translateX(15px) rotate(6deg);transform:translateX(15px) rotate(6deg)}
+    9%{-webkit-transform:translateX(-15px) rotate(-3.6deg);transform:translateX(-15px) rotate(-3.6deg)}
+    12%{-webkit-transform:translateX(9px) rotate(2.4deg);transform:translateX(9px) rotate(2.4deg)}
+    15%{-webkit-transform:translateX(-6px) rotate(-1.2deg);transform:translateX(-6px) rotate(-1.2deg)}}
 
 #wolf:hover{
     content: url(../asset/svg/wolf.svg);
