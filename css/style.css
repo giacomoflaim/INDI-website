@@ -254,8 +254,10 @@ p{
     border-radius: 50%;
     width: 96px;
     height: 96px;
-    margin: 80 0 80 0
+    margin: 80 0 80 0;
 }
+
+
 
 .vibrate{
     animation: vibrate-1 1.4s linear infinite both;
@@ -266,10 +268,15 @@ p{
 	        animation: wobble-hor-bottom 1.3s infinite both;
 }
 
+.shake{
+    -webkit-animation: shake-vertical 1.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+	        animation: shake-vertical 1.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
 /* vibrate circle-2 */
 @keyframes vibrate-1
 {
-    0%{transform:translate(0)}5%{transform:translate(-6px,6px)}10%{transform:translate(-6px,-6px)}15%{transform:translate(6px,6px)}20%{transform:translate(6px,-6px)}25%{transform:translate(0)}
+    0%{transform:translate(0)}3%{transform:translate(-8px,8px)}6%{transform:translate(-8px,-8px)}9%{transform:translate(8px,8px)}12%{transform:translate(8px,-8px)}15%{transform:translate(0)}
 }
 
 
@@ -290,9 +297,27 @@ p{
     12%{-webkit-transform:translateX(9px) rotate(2.4deg);transform:translateX(9px) rotate(2.4deg)}
     15%{-webkit-transform:translateX(-6px) rotate(-1.2deg);transform:translateX(-6px) rotate(-1.2deg)}}
 
+
+/* shake circle-4 */
+@-webkit-keyframes shake-vertical{
+    0%,20%{-webkit-transform:translateY(0);transform:translateY(0)}
+    2%,6%,10%,14%{-webkit-transform:translateY(-12px);transform:translateY(-12px)}
+    4%,8%,12%{-webkit-transform:translateY(12px);transform:translateY(12px)}
+    16%{-webkit-transform:translateY(8.4px);transform:translateY(8.4px)}
+    18%{-webkit-transform:translateY(-8.4px);transform:translateY(-8.4px)}}
+
+@keyframes shake-vertical{
+    0%,20%{-webkit-transform:translateY(0);transform:translateY(0)}
+    2%,6%,10%,14%{-webkit-transform:translateY(-12px);transform:translateY(-12px)}
+    4%,8%,12%{-webkit-transform:translateY(12px);transform:translateY(12px)}
+    16%{-webkit-transform:translateY(8.4px);transform:translateY(8.4px)}
+    18%{-webkit-transform:translateY(-8.4px);transform:translateY(-8.4px)}}
+
+
+
 #wolf:hover{
     content: url(../asset/svg/wolf.svg);
-    animation-play-state: paused;
+    animation: none;
     transform: scale(1.5);
     
     
@@ -300,15 +325,15 @@ p{
 
 #fish:hover{
     content: url(../asset/svg/fish.svg);
-    animation-play-state: paused;
+    animation: none;
     transform: scale(1.5);
       
 }
 
 #gorilla:hover{
     content: url(../asset/svg/gorilla.svg);
+    animation: none;
     transform: scale(1.5);
-    animation-play-state: paused;
     
 }
 
