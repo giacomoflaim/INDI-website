@@ -1038,3 +1038,18 @@ hr.line-footer {
     cursor: pointer;
 }
 
+
+/*      MEDIA QUERY     */
+
+/*   MD   */
+
+@media (max-width: 991.98px) { 
+
+    h2{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
