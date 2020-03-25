@@ -1052,6 +1052,19 @@ hr.line-footer {
     h2{
         font-size: 2.3rem;
     }
+    
+    .nav-link{
+        margin-left: 30px;        
+    }
+    
+    .navbar, .navbar-expand-md, .my-navbar{
+        padding-right: 0px;
+    }
+    
+    .my-btn-menu{
+        margin-left: 30px;
+        margin-right: 0px;
+    }
 
 }
 
