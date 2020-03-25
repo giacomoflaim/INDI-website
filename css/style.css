@@ -32,6 +32,10 @@ html {
     margin: 24 0 24 0;
 }
 
+.my-h-100{
+    height: 100vh;
+}
+
 /*  TOP */
 
 .top-160{
@@ -254,7 +258,7 @@ p{
     border-radius: 50%;
     width: 96px;
     height: 96px;
-    margin: 80 0 80 0;
+    margin: 100 0 80 0;
 }
 
 
@@ -1046,7 +1050,7 @@ hr.line-footer {
 @media (max-width: 991.98px) { 
 
     h2{
-        font-size: 0.9rem;
+        font-size: 2.3rem;
     }
 
 }
