@@ -258,13 +258,13 @@ p{
 }
 
 .circle-2{
-    background: #6F6FB6;
+    background: #180060;
     border-radius: 50%;
     width: 96px;
     height: 96px;
     margin: 80 0 80 0;
-    animation: vibrate-1 0.3s linear infinite both;
-    transition: all .6s ease-in-out;   
+    animation: vibrate-1 0.3s linear infinite both; 
+    
 }
 
 @keyframes vibrate-1{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
@@ -272,14 +272,15 @@ p{
 #wolf:hover{
     content: url(../asset/svg/wolf.svg);
     animation-play-state: paused;
+    transform: scale(1.5);
     
     
 }
 
 #fish:hover{
     content: url(../asset/svg/fish.svg);
-    transform: scale(1.5);
     animation-play-state: paused;
+    transform: scale(1.5);
       
 }
 
