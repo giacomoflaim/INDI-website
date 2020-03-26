@@ -47,20 +47,19 @@
             <img id="logo-nav" src="./asset/svg/group-21-copy.svg" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon my-icon-toggler"></span>
         </button>
         <div class="navbar-collapse my-nav-items collapse w-100 right-nav" id="collapsingNavbar">
-            <ul class="nav navbar-nav ml-auto w-100 justify-content-end" style="margin-left:100px">
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end my-ul" style="margin-left:100px">
                 <li class="nav-item">
                     <a class="nav-link" href="#">chi siamo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link my-nav-items " href="#">diversi-kit</a>
                 </li>
-                <li class="nav-item">
-                    
-                    <button type="button" class="btn btn-default btn-lg my-btn-menu">
-                            <span class="btn-download-kit-text">scarica il kit</span>
+                <li class="nav-item">                    
+                    <button type="button" class="btn my-btn-menu">
+                            <span class="download-menu-text">scarica il kit</span>
                     </button>
                 </li>
             </ul>
@@ -69,18 +68,18 @@
     
 <!-- copertina-->
 
-    <div class="row h-100">
-        <div class="col-lg-4 offset-1 col-md-4" style="margin-top: 14%;">
-            <div class="row margin-standard">
+    <div class="row">
+        <div class="col-lg-4 offset-lg-1 col-md-4 offset-md-0 col-sm-10 content-copertina">
+            <div class="row">
                 <img  id="logo-copertina" src="./asset/svg/group-21-copy.svg" alt="">
             </div>
-            <div class="row margin-standard">
+            <div class="row top-40">
                 <h2>Una nuova generazione di <span class="highlight-text">in</span>novator*,
                     che si prendono cura del futuro facendo 
                     spazio alla <span class="highlight-text">di</span>versità.
                 </h2>
             </div>
-            <div class="row margin-standard">
+            <div class="row top-32">
                 <a href="#il-contesto">
                     <button class="arrow-copertina"><i class='fas fa-chevron-down' style="margin-top: 3px;"></i></button>
                 </a>
@@ -106,23 +105,31 @@
             <div class="circle"></div>
             <div class="circle wobble"id="fish"></div> 
         </div>
+        
+    <!-- only SM e XS -->    
+        <div class="container display-only-sm-xs">
+            <div class="row">            
+                <img class="mx-auto d-block img-copertina-sm" src="./asset/svg/img-copertina-sm.svg" alt="">            
+            </div>
+        </div>
+        
     </div>   
     
 </div>
     
 <div class="container white-bg bottom-80">
     <div class="row top-40">
-        <div class="col-lg-5 offset-0" id="il-contesto">
-            <h5 style ="padding-top:40px;">IL CONTESTO</h5>
+        <div class="col-lg-12 offset-0" id="il-contesto">
+            <h5 class="top-40">IL CONTESTO</h5>
         </div>
     </div>
     <div class="row top-40">
-        <div class="col-xl-5 col-lg-6 col-md-6" style="margin-top: 16px;">
+        <div class="col-xl-5 col-lg-6 col-md-8">
             <h1>Quando ti chiedono se c'è diversità nel tuo ambiente di lavoro, cosa rispondi? </h1>
             <p class="top-32">Mentre tutti condividono la necessità di un'attenzione verso la diversità, non è detto che nella pratica sia davvero così.</p>            
         </div>
-        <div class="col-xl-4 offset-xl-3 col-lg-3 offset-lg-2">
-            <img  id="img-contesto" src="./asset/svg/img-il-contesto.svg" alt="">
+        <div class="col-xl-4 offset-xl-3 col-lg-3 offset-lg-2 col-md-3 col-sm-12">
+            <img class="mx-auto d-block" id="img-contesto" src="./asset/svg/img-il-contesto.svg" alt="">
         </div>
     </div>
 </div>
@@ -130,7 +137,7 @@
 <div class="container-fluid white-bg bottom-120" style="padding: 0;">
     
     <div class="row margin-standard">
-        <div class="col-lg-12" style="padding-right: 85px; text-align: right;">
+        <div class="col-lg-12 controls-slider-1">
             <button class="arrow-slider-1 swiper-button-prev"><i class='fas fa-chevron-left' style="margin-right: 3px;"></i></button>
             <button class="arrow-slider-1 swiper-button-next"><i class='fas fa-chevron-right' style="margin-left: 3px;"></i></button>  
         </div>
@@ -200,10 +207,10 @@
         </div>
     </div>
     <div class="row top-40">
-        <div class="col-lg-6 align-self-center">
+        <div class="col-lg-6 col-md-6 align-self-center">
             <h1>Cosa succede nel tuo mondo?</h1>         
         </div>
-        <div class="col-lg-6" style="padding-top: 16px;">
+        <div class="col-lg-6 col-md-6" style="padding-top: 16px;">
             <p>Ecco una serie di spunti ed attività per coinvolgere te e i tuoi colleghi in una riflessione sui valori e comportamenti che caratterizzano la vostra quotidianità.</p>
         </div>
     </div>
@@ -242,7 +249,7 @@
                 <div class="row h-100">
                     <div class="container align-self-center">
                         <div class="row">
-                            <div class="col-lg-6 align-self-center">
+                            <div class="col-lg-6 offset-lg-0 col-md-5 offset-md-1 align-self-center">
                                 <h3 class="h3-esercizio">1.</h3>
                                 <h1 class="h1-esercizio">Quali sono i principi promossi nel tuo ambiente di lavoro? </h1>
                                 <p class="p-esercizio">La nostra attività lavorativa di tutti i giorni è guidata da un insieme di valori che determinano non solo la nostra motivazione ma anche le nostre relazioni e dinamiche con gli altri. Questo esercizio di card sorting è pensato per aiutarvi a riflettere su quali sono i principi riconosciuti da tutti all'interno dell'ambiente di lavoro, e quelli invece importanti ma trascurati.</p>
@@ -253,13 +260,13 @@
                                 
                                 
                             </div>
-                            <div class="col-lg-5 offset-1 align-self-center">
-                                <img  id="" src="./asset/svg/img-es-1.svg" alt="">
+                            <div class="col-lg-5 offset-lg-1 col-md-5 align-self-center">
+                                <img  class="image-esercizi" src="./asset/svg/img-es-1.svg" alt="">
                             </div>
                         </div>
                     </div>
                     
-                    <div class="align-self-center">
+                    <div class="align-self-center btn-custom-slider">
                         <a data-target="#myCarousel" data-slide-to="1">
                             <div class="container-slider container-lupo hide-func">
                                 <h4 class="label">DIVERsi-tipi</h4>
@@ -276,7 +283,7 @@
                 <div class="row h-100">
                     <div class="container align-self-center">
                         <div class="row">
-                            <div class="col-lg-6 align-self-center">
+                            <div class="col-lg-6 offset-lg-0 col-md-5 offset-md-1 align-self-center">
                                 <h3 class="h3-esercizio">2.</h3>
                                 <h1 class="h1-esercizio">Chi popola il tuo ambiente di lavoro?</h1>
                                 <p class="p-esercizio">L'ambiente di lavoro è una sorta di comunità, definita dalla presenza di una serie di persone dalla diversa attitudine e necessità, e dalla rete di relazioni che si sviluppa tra loro. Questo esercizio ispirato agli archetipi comportamentali vi aiuterà a ragionare sulle esigenze e difficoltà che ciascuno di noi incontra, interrogandoci su diverse variabili e livelli di accettazione della diversità.</p>
@@ -287,13 +294,13 @@
                                 
                                 
                             </div>
-                            <div class="col-lg-5 offset-1 align-self-center">
-                                <img  id="" src="./asset/svg/img-es-2.svg" alt="">
+                            <div class="col-lg-5 offset-lg-1 col-md-5 align-self-center">
+                                <img  class="image-esercizi" src="./asset/svg/img-es-2.svg" alt="">
                             </div>
                         </div>
                     </div>
                     
-                    <div class="align-self-center">
+                    <div class="align-self-center btn-custom-slider">
                         <a data-target="#myCarousel" data-slide-to="2">
                             <div class="container-slider container-persona hide-func">
                                 <h4 class="label">roleplaying</h4>
@@ -311,7 +318,7 @@
                 <div class="row h-100">
                     <div class="container align-self-center">
                         <div class="row">
-                            <div class="col-lg-6 align-self-center">
+                            <div class="col-lg-6 offset-lg-0 col-md-5 offset-md-1 align-self-center">
                                 <h3 class="h3-esercizio">3.</h3>
                                 <h1 class="h1-esercizio">Cosa accade nelle vostre giornate?</h1>
                                 <p class="p-esercizio">Nella teoria siamo spesso tutti d'accordo, ma poi nella pratica le cose sono più complicate: la vita lavorativa mette spesso alla prova ciascuno di noi, ponendoci da osservatori o protagonisti in una serie di situazioni di discriminazione. Questo esercizio di card sorting e role playing è un modo per identificare situazioni che avete visto o vissuto, o a cui non avete mai prestato attenzione, e elaborare una serie di stategie d'azione.</p>
@@ -322,13 +329,13 @@
                                 
                                 
                             </div>
-                            <div class="col-lg-5 offset-1 align-self-center">
-                                <img  id="" src="./asset/svg/img-es-3.svg" alt="">
+                            <div class="col-lg-5 offset-lg-1 col-md-5 align-self-center">
+                                <img  class="image-esercizi" src="./asset/svg/img-es-3.svg" alt="">
                             </div>
                         </div>
                     </div>
                     
-                    <div class="align-self-center">
+                    <div class="align-self-center btn-custom-slider">
                         <a data-target="#myCarousel" data-slide-to="3">
                             <div class="container-slider container-binocolo hide-func">
                                 <h4 class="label">buoni diversi propositi</h4>
@@ -337,7 +344,6 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         <!-- End Item -->
             
@@ -346,7 +352,7 @@
                 <div class="row h-100">
                     <div class="container align-self-center">
                         <div class="row">
-                            <div class="col-lg-6 align-self-center">
+                            <div class="col-lg-6 offset-lg-0 col-md-5 offset-md-1 align-self-center">
                                 <h3 class="h3-esercizio">4.</h3>
                                 <h1 class="h1-esercizio">Puoi fare qualcosa di diverso?</h1>
                                 <p class="p-esercizio">Se hai fatto uno o più degli esercizi proposti, potrebbero essere sorte delle idee su come trasformare il tuo ambiente di lavoro o il tuo comportamento stesso in modo più inclusivo e attento alla diversità. Questo esercizio vuole aiutarvi a formulare una serie di intenzioni, individuali o collettive, che contribuiscono a realizzare il cambiamento.</p>
@@ -356,13 +362,13 @@
                                 </button>                              
                                 
                             </div>
-                            <div class="col-lg-5 offset-1 align-self-center">
-                                <img  id="" src="./asset/svg/img-es-4.svg" alt="">
+                            <div class="col-lg-5 offset-lg-1 col-md-5 align-self-center">
+                                <img  class="image-esercizi" src="./asset/svg/img-es-4.svg" alt="">
                             </div>
                         </div>
                     </div>
                     
-                    <div class="align-self-center">
+                    <div class="align-self-center btn-custom-slider">
                         <a data-target="#myCarousel" data-slide-to="0">
                             <div class="container-slider container-binocolo hide-func">
                                 <h4 class="label">mappa dei valori</h4>
@@ -378,18 +384,21 @@
                 <span class="my-prev-icon" aria-hidden="true"></span><div id=prev-arrow-slider></div>
                 <span class="sr-only">Previous</span>
             </a>
+            <a class="carousel-control-next d-none d-md-block d-lg-none" href="#myCarousel" role="button" data-slide="next">
+                <span class="my-next-icon" aria-hidden="true"></span><div id=next-arrow-slider></div>
+                <span class="sr-only">Next</span>
+            </a>
             
         </div>
     </div>
 </div>
     
 <!-- scarica il kit -->
-
-<div class="container-fluid darkblue-bg">
-    <div class="bg-img">
+<div class="container-fluid" id="c-f-scarca-kit">
+    <div class="jumbotron jumbotron-fluid" id="bg-scarica-kit">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-3 top-80 bottom-80">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 top-80 bottom-80">
                     <h1 class="scarica-kit-title">Organizza il tuo workshop </h1>
                     <p class="scarica-kit-text top-32">Porta questa riflessione all'interno della tua realtà e diventa a tua volta promotore di un cambiamento.</p>
                     <div class="d-flex justify-content-center">
@@ -399,17 +408,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>    
+        </div>    
+    </div>
 </div>
     
 <div class="container-fluid">
     <div class="row bg-orange">
-        <div class="col-lg-6" style="padding: 0;">
+        <div class="col-lg-6 col-md-7" style="padding: 0;">
             <img class="img-fluid" src="./asset/img/DSC_0532.png" alt="">        
         </div>
-        
-        <div class="col-lg-4 offset-lg-1 align-self-center">
+        <div class="col-lg-4 offset-lg-1 col-md-5 offset-md-0 align-self-center">
             <h5 style="color:#ffffff;">29 Aprile 2020</h5>
             <h1 class="top-64" style="color:#ffffff;">Workshop Zero</h1>
             <p class="top-32" style="color:#ffffff;">INDI partecipa a STEM in the city con un incontro tra esperti volto a validare esercizi e spunti di riflessione proposti.</p>
@@ -420,10 +428,10 @@
     </div>
 </div>
     
-<div class="jumbotron jumbotron-fluid" id="img-bg">
+<div class="jumbotron jumbotron-fluid" id="img-bg-mockup" style="background-color: #D7DBE6">
     <div class="container">
         <div class="row top-160 bottom-160">
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-7">
                 <img  id="logo-dark" src="./asset/svg/indi-dark.svg" alt="indi-logo">
                 <h1 class="top-32">è anche su Kickstarter </h1>
                 <p class="top-24">Sostienici e prenota il tuo kit fisico per organizzare il workshop nella tua realtà!</p>
@@ -438,19 +446,21 @@
 
 <div class="container-fluid footer-bg">
     <div class="row">
-        <div class="col-lg-4 top-64">
-            <img  id="logo-footer" src="./asset/svg/group-21-copy.svg" alt="indi-logo">
-        </div>
-        <div class="col-lg-4 top-64">
-            <h5 style="color:#ffffff; padding-top: 12px;">contatti</h5>
-            <p class="top-24" style="color:#fff">helloindi@gmail.com</p>            
-        </div>
-        <div class="col-lg-4 top-64">
-            <h5 style="color:#ffffff; padding-top: 12px;">seguici su</h5>
-            <div class="icon-social twitter"></div>
-            <div class="icon-social instagram"></div>
-            <div class="icon-social facebook"></div>
-        </div>    
+        
+            <div class="col-lg-4 col-md-4 top-64">
+                <img  id="logo-footer" src="./asset/svg/group-21-copy.svg" alt="indi-logo">
+            </div>
+            <div class="col-lg-4 col-md-4 top-64">
+                <h5 style="color:#ffffff; padding-top: 12px;">contatti</h5>
+                <p class="top-24" style="color:#fff">helloindi@gmail.com</p>            
+            </div>
+            <div class="col-lg-4 col-md-4 top-64">
+                <h5 style="color:#ffffff; padding-top: 12px;">seguici su</h5>
+                <div class="icon-social twitter"></div>
+                <div class="icon-social instagram"></div>
+                <div class="icon-social facebook"></div>
+            </div> 
+        
     </div>
     <hr class="line-footer">
     <h5 class="footer-h5">Privacy Policy and Cookies</h5>
