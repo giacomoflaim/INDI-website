@@ -8,7 +8,7 @@
 
 body {
     height: 100%;
-    overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -29,9 +29,7 @@ html {
 
 
 
-.my-h-100{
-    height: 100vh;
-}
+
 
 /*  TOP */
 
@@ -260,6 +258,7 @@ p{
 
 .content-copertina{
     margin-top: 14%;
+    height: 100%;
 }
 
 
