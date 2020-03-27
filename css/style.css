@@ -710,6 +710,19 @@ ul {
     z-index: 200;
 }
 
+.container-bicchiere:hover:after {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 24%;
+    left: 37%;
+    transform: rotate(-90deg);       
+    content: url(../asset/svg/bicchiere-es.svg);  
+    z-index: 200;
+}
+
 
 
 /* btn download esercizi */
@@ -1207,8 +1220,8 @@ hr.line-footer {
         height: 800px;
     }
     
-    .image-esercizi{
-        max-width: 290;
+    .img-esercizi{
+        width: 290px;
     }
     
     .btn-custom-slider{
