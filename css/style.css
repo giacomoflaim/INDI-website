@@ -137,6 +137,14 @@ h5{
     color: #100f86;    
 }
 
+.white-text{
+    color: #ffffff;
+}
+
+.blue-text{
+    color: #100F86;
+}
+
 h6{
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 1.4rem;
@@ -875,6 +883,10 @@ ul {
     padding: 40 0 40 0;
 }
 
+.blue-bg{
+    background-color: #100F86;    
+}
+
 #c-f-scarca-kit{
     background-color: #0c0158;
     padding: 48 0;
@@ -1056,7 +1068,6 @@ ul {
 
 .footer-bg{
     background-color: #0c0158;
-    height: 290px
 }
 
 #logo-footer{
@@ -1176,6 +1187,10 @@ hr.line-footer {
         margin: 0 16 0 40;
     }
     
+    .margin-md{
+        margin-left: 120px;
+    }
+    
     #img-contesto{
         max-width: 180px;
     }
@@ -1232,7 +1247,6 @@ hr.line-footer {
     
     .footer-bg{
     background-color: #0c0158;
-    height: 240px
     }
     
     #logo-footer{
@@ -1251,8 +1265,56 @@ hr.line-footer {
 
 @media (max-width: 767.98px) {
     
+    p{
+        font-size: 2.0rem;
+    }
+    
     .top-40{
         margin-top: 32px;
+    }
+    
+    .bottom-80{
+        margin-bottom: 40px;
+    }
+    
+    .top-80{
+        margin-top: 40px;
+    }
+    
+    .top-sm-72{
+        margin-top: 72px;
+    }
+    
+    .top-sm-56{
+        margin-top: 56px;
+    }
+    
+    .top-sm-40{
+        margin-top: 40px;
+    }
+    
+    .top-sm-32{
+        margin-top: 32px;
+    }
+    
+    .top-sm-24{
+        margin-top: 24px;
+    }
+    
+    .top-sm-16{
+        margin-top: 16px;
+    }
+    
+    .top-sm-8{
+        margin-top: 8px;
+    }
+    
+    .bottom-sm-40{
+        margin-bottom: 40px;
+    }
+    
+    .bottom-sm-72{
+        margin-bottom: 72px;
     }
     
     
@@ -1279,7 +1341,7 @@ hr.line-footer {
     margin-top: 10%;
     }
     
-    .arrow-copertina, .circle-div{
+    .xs-sm-none{
         display: none;
     }
     
@@ -1304,20 +1366,104 @@ hr.line-footer {
     }
     
     .swiper-text {
-    padding: 60px;
+        padding: 60px;
     }
     
     .swiper-slide:nth-child(1) {
-    width: 490px;
+        width: 490px;
     }
     .swiper-slide:nth-child(2n) {
-    width: 490px;
+        width: 490px;
     }
     .swiper-slide:nth-child(3n) {
-    width: 490px;
+        width: 490px;
     }
     .swiper-slide:nth-child(4n) {
-    width: 490px;
+        width: 490px;
+    }
+    
+    
+    /* esercizi */
+    
+    
+    .btn-download-es-sm{
+        background-color: transparent;
+        color: #ffffff;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.75px;
+        height: 40px;
+        border-radius: 20px;
+        width: auto;
+        padding: 0;
+        position:relative;
+        border: 1px solid white;
+    }
+
+    .btn-download-es-sm-text{
+        margin: 0 24 0 48;
+    }
+
+    .btn-download-es-sm::before {   
+        position: absolute;
+        content: url(../asset/svg/arrow-button-close.svg);
+        height: 40px;
+        width: 40px;
+        background: transparent;
+        border-radius: 50px;
+        left: -1;
+        top: -1;    
+        display:flex;
+        align-items: center;
+        padding: 2 0 0 12;
+        transition: ease,width .5s cubic-bezier(.75,0,.175,1);
+    }
+    
+    .btn-download-es-sm:hover{
+        color: #ffffff;
+        background: #ff5958;
+        border: 1px solid #ff5958;
+    
+    }
+
+    .btn-download-es-sm:hover:before {
+        content: url(../asset/svg/arrow-button-hover.svg);
+        border:none;
+        padding:0 0 0 12;
+    }
+    
+    #c-f-scarca-kit {
+        background-color: #0c0158;
+        padding: 0 0;
+    }
+    
+    #bg-scarica-kit{
+        background-size:auto;
+    }
+    
+    .bg-grey{
+        background-color: #D7DBE6;
+    }
+    
+    /* footer */
+    #logo-footer{
+        margin-left: 0px;
+    }
+    
+    hr.line-footer{
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        margin:0;
+    }
+    
+    .footer-h5{
+        margin-left: 0px;
+    }
+    
+    .icon-social{
+        height: 40px;
+        margin: 8 16 0 0;
     }
     
    
