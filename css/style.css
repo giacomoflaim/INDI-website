@@ -598,6 +598,7 @@ left: 50%;
 .modal-backdrop {
     background-color: #6F6FB6;
     opacity:0.75 !important;
+    height: 100vh;
     
 }
 
