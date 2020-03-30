@@ -272,7 +272,6 @@ p{
 
 #logo-copertina{
     width: 367px;
-    height: 139px;
 }
 
 .circle-div{
@@ -1277,6 +1276,10 @@ hr.line-footer {
         margin-bottom: 40px;
     }
     
+    .bottom-120{
+        margin-bottom: 60px;
+    }
+    
     .top-80{
         margin-top: 40px;
     }
@@ -1339,6 +1342,8 @@ hr.line-footer {
     
     .content-copertina {
     margin-top: 10%;
+    margin-left: 0px;
+        
     }
     
     .xs-sm-none{
@@ -1466,7 +1471,14 @@ hr.line-footer {
         margin: 8 16 0 0;
     }
     
-   
+}
+
+@media (max-width: 575.98px) {
+    
+    #logo-copertina{
+        width: 70%;
+    }
+    
     
     
 }
