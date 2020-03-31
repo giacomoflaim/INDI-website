@@ -90,18 +90,18 @@ h1{
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 4rem;
     font-weight: 700;
-    line-height: 1.17;
+    line-height: 1.1;
     letter-spacing: normal;
     color: #100f86;
 }
 
 h2{
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 2.9rem;
+    font-size: 3.0rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.43;
+    line-height: 1.12;
     letter-spacing: normal;
     color: #ffffff;
 }
@@ -113,7 +113,7 @@ h2{
 h3{
     font-family: 'Nunito', sans-serif;
     font-size: 4.2rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.31;
     color: #ffffff;
     text-align: left;
@@ -149,7 +149,7 @@ h5{
 
 h6{
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     text-transform: none;
     color: #ffffff;   
@@ -157,7 +157,7 @@ h6{
 
 p{
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 500;
     line-height: 2.8rem;
     letter-spacing: normal;
@@ -701,7 +701,8 @@ ul {
 /* style scheda esercizi */
 
 .h3-esercizio{
-    color:#ff5958
+    color:#ff5958;
+    font-weight: 500;
 }
 
 .h1-esercizio{
@@ -862,7 +863,9 @@ ul {
     padding:0 0 0 13;
 }
 
-
+.img-custom-es{
+    max-height: 500px !important;
+}
 
 
 .btn-download-es{
@@ -930,7 +933,7 @@ ul {
 #next-arrow-slider{
     position: absolute;
     height: 24px;
-    left: 10;
+    left: auto;
     content: url(../asset/svg/arrow-button-hover.svg);
     transform: rotate(270deg);
     z-index: 100;
@@ -949,7 +952,7 @@ ul {
 #prev-arrow-slider{
     position: absolute;
     height: 24px;
-    left: 10;
+    left: auto;
     content: url(../asset/svg/arrow-button-hover.svg);
     transform: rotate(90deg);
 }
@@ -1240,6 +1243,9 @@ hr.line-footer {
         margin-bottom: 80px;
     }
     
+    #logo-copertina {
+        width: 110%;
+    }
     
     .content-copertina{
         margin-left: 24px;
@@ -1314,7 +1320,7 @@ hr.line-footer {
         height: 800px;
     }
     
-    .img-esercizi{
+    .img-custom-es{
         width: 290px;
     }
     
@@ -1449,6 +1455,10 @@ hr.line-footer {
     height: auto !important;
     }
     
+    #logo-copertina {
+        width: 55%;
+    }
+    
     /* sm slider 1 */
     
     .controls-slider-1 {
@@ -1568,7 +1578,7 @@ hr.line-footer {
 @media (max-width: 575.98px) {
     
     #logo-copertina{
-        width: 70%;
+        width: 65%;
     }
     
     .controls-slider-1 {
