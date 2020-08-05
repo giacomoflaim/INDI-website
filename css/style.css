@@ -1181,6 +1181,12 @@ ul {
     cursor: pointer;
 }
 
+.medium{
+    content: url("../asset/svg/medium.svg");
+    display: inline;
+    cursor: pointer;
+}
+
 .facebook{
     content: url("../asset/svg/facebook.svg");
     display: inline;
